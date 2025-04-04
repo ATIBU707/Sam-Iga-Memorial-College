@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="shortcut icon" href="../images/cropped-logo.png" type="image/x-icon">
+</head>
+<body>
+        <form>
+            <h1><img src="../images/cropped-logo.png" alt="SIMC"><br>Login</h1>
+            <label for="name" class="user">Username:</label>
+            <input type="text" id="" name="Username" placeholder="Enter your Username"><br>
+            <label for="name" class="user">Password:</label>
+            <input type="password" id="" name="password:" placeholder="Enter your password"><br>
+            <button class="login">Login</button>
+            <a href="#" class="reset">
+            Reset
+            </a>
+            
+            <p><a href="#" style="text-align:center; text-decoration: none;"> 
+                Forgot Password?
+            </a>
+        </p>
+        </form>
+</body>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.querySelector('input[name="Username"]').value;
+        const password = document.querySelector('input[name="password:"]').value;
+        const resultDiv = document.createElement('div');
+        resultDiv.innerHTML = `<p>Username: ${username}</p><p>Password: ${password}</p>`;
+        document.body.appendChild(resultDiv);
+    });
+</script>
+</html>
+
+    

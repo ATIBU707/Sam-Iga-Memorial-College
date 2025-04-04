@@ -1,0 +1,347 @@
+.olevel-section {
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+.olevel-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.olevel-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.olevel-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #333;
+}
+
+.program-overview {
+    margin-bottom: 4rem;
+}
+
+.program-overview h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.overview-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.overview-card:hover {
+    transform: translateY(-5px);
+}
+
+.overview-icon {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.overview-card h3 {
+    color: #2a5298;
+    margin-bottom: 1rem;
+}
+
+.overview-card p {
+    color: #666;
+}
+
+.subjects-section {
+    margin-bottom: 4rem;
+}
+
+.subjects-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.subject-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subject-card h3 {
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.subject-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.subject-card ul li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555;
+}
+
+.subject-card ul li:before {
+    content: "•";
+    color: #1e3c72;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.features-section {
+    margin-bottom: 4rem;
+}
+
+.features-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.feature-card h3 {
+    color: #2a5298;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.assessment-section {
+    margin-bottom: 4rem;
+}
+
+.assessment-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.assessment-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.assessment-content p {
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.assessment-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.assessment-content ul li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555;
+}
+
+.assessment-content ul li:before {
+    content: "•";
+    color: #1e3c72;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.extracurricular-section {
+    margin-bottom: 4rem;
+}
+
+.extracurricular-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.activity-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-icon {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.activity-card h3 {
+    color: #2a5298;
+    margin-bottom: 1rem;
+}
+
+.activity-card p {
+    color: #666;
+}
+
+.cta-section {
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.cta-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn.primary {
+    background-color: white;
+    color: #1e3c72;
+}
+
+.cta-btn.secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+@media (max-width: 1200px) {
+    .overview-grid, .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .olevel-section {
+        padding: 1rem;
+    }
+
+    .olevel-header h1 {
+        font-size: 2rem;
+    }
+
+    .overview-grid, .features-grid, .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .olevel-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .overview-icon, .feature-icon, .activity-icon {
+        font-size: 2rem;
+    }
+} 

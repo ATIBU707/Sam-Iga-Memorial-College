@@ -1,0 +1,149 @@
+
+             * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+
+                
+                    .background-section {
+                        max-width: 1200px;
+                        margin: 32px auto;
+                        padding: 0 16px;
+                    }
+
+                    .background-header {
+                        text-align: center;
+                        margin-bottom: 48px;
+                    }
+
+                    .background-header h1 {
+                        color: #40276E;
+                        font-size: 40px;
+                        margin-bottom: 16px;
+                    }
+
+                    .background-header p {
+                        color: #666;
+                        font-size: 17.6px;
+                        max-width: 800px;
+                        margin: 0 auto;
+                    }
+
+                    .background-content {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 32px;
+                        align-items: center;
+                    }
+
+                    .background-image {
+                        border-radius: 10px;
+                        overflow: hidden;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .background-image img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+
+                    .background-text {
+                        padding: 32px;
+                        background-color: white;
+                        border-radius: 10px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .background-text h2 {
+                        color: #40276E;
+                        font-size: 28.8px;
+                        margin-bottom: 24px;
+                    }
+
+                    .background-text p {
+                        color: #444;
+                        line-height: 1.6;
+                        margin-bottom: 24px;
+                    }
+
+                    .mission-vision {
+                        margin-top: 48px;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 32px;
+                    }
+
+                    .mission, .vision {
+                        background-color: white;
+                        padding: 32px;
+                        border-radius: 10px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .mission h3, .vision h3 {
+                        color: #40276E;
+                        font-size: 24px;
+                        margin-bottom: 16px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .mission h3 i, .vision h3 i {
+                        margin-right: 8px;
+                        color: #FC6341;
+                    }
+
+                    .mission p, .vision p {
+                        color: #444;
+                        line-height: 1.6;
+                    }
+
+                    .values {
+                        margin-top: 48px;
+                        text-align: center;
+                    }
+
+                    .values h2 {
+                        color: #40276E;
+                        font-size: 32px;
+                        margin-bottom: 32px;
+                    }
+
+                    .values-grid {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 32px;
+                    }
+
+                    .value-item {
+                        background-color: white;
+                        padding: 32px;
+                        border-radius: 10px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease;
+                    }
+
+                    .value-item:hover {
+                        transform: translateY(-5px);
+                    }
+
+                    .value-item i {
+                        font-size: 40px;
+                        color: #FC6341;
+                        margin-bottom: 16px;
+                    }
+
+                    .value-item h3 {
+                        color: #40276E;
+                        font-size: 20.8px;
+                        margin-bottom: 16px;
+                    }
+
+                    .value-item p {
+                        color: #444;
+                        line-height: 1.6;
+                    }
+
+                

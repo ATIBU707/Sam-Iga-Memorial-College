@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #text {
+            font-size: 24px;
+            font-weight: bold;
+            border-right: 2px solid black;
+            padding-right: 5px;
+            display: inline-block;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .img{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+        .img img{
+            margin: 10px;
+        }
+        .content{
+            padding: 50px;
+        }
+        .typewriter {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(22) forwards, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 22ch; /* Adjust based on the number of characters */
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .counter {
+            font-size: 60px;
+            font-weight: bold;
+            color: #a11f1f;
+        }
+    </style>
+</head>
+<body>
+    <div id="text"></div>
+    <h1 class="typewriter">Welcome to my website!</h1>
+    <section >
+        <div class="container">
+            <div style="background-color: red; width: 630px;">
+                <h1>About Us</h1>
+                <div class="img">
+                    <img src="../images/adm.png" alt="Admin" style="width: 250px; height: 100px; margin-top: 200px; margin-left: 100px;">
+                    <img src="../images/adm1.png" alt="Admin" style="width: 450px; border:1px solid red; border-radius: 10px; ">
+                </div>
+
+            </div>
+            <div class="content">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias non suscipit eaque, accusantium voluptatum repellendus, beatae facere officiis tempora aliquam ad quo eveniet molestias ex inventore sequi atque, deleniti quam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente illum natus? Expedita ea molestias repudiandae est, nobis voluptatem dolorum fuga ipsa illo. Nam, dignissimos eum pariatur neque quisquam soluta.
+            </p>
+        </div>
+        </div>
+    </section>
+    <div class="counter" id="counter">0</div>
+    <div class="counter" id="count">0</div>
+
+    <script>
+        function countUp(target) {
+            let count = 0;
+            let counterElement = document.getElementById("counter");
+            let interval = setInterval(() => {
+                count++;
+                counterElement.textContent = count.toLocaleString();               if (count >= target) {
+                    clearInterval(interval);
+                }
+            }, 10); 
+        }
+
+        countUp(1000);
+    </script>
+
+    <script>
+        function countUp(target) {
+            let count = 0;
+            let counterElement = document.getElementById("count");
+            let interval = setInterval(() => {
+                count++;
+                counterElement.textContent = count.toLocaleString(); // Adds comma formatting
+                if (count >= target) {
+                    clearInterval(interval);
+                }
+            }, 10); // Speed: Adjust this for slower/faster counting
+        }
+
+        countUp(1002); // Change this number to count up to a different value
+    </script>
+</body>   
+
+    <script>
+        const text = "Welcome to my website!";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("text").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100); // Adjust speed (lower = faster)
+            }
+        }
+
+        window.onload = typeWriter; // Start typing when the page loads
+    </script>
+

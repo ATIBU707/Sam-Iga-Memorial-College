@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwenzori Tech Hub LTD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: rgb(5, 83, 5);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(5, 83, 5);
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content li{
+            list-style: none;
+            border-bottom: 1px solid black;
+        }
+
+        .dropdown-content a:hover {
+            color: green;
+        }
+        
+        .logo h1 {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links li {
+            margin: 0 1rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: rgb(26, 137, 113);
+        }
+    
+        </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+        <h1>Rwenzori Tech Hub LTD</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#" style="color: rgb(26, 137, 113);">Home</a></li>
+           <li><a href="#">Company</a></li>
+            
+        </li>
+        <li class="dropdown">
+            <a href="#">IT Solutions </i></a>
+            <ul class="dropdown-content">
+                <li><a href="#">IT Suport</a></li>
+                <li><a href="#">Cyber</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">E-Commerce</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Our Products</i></a>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+<img src="../images/Data center.jpeg" alt="Data Center" style="width: 100%;">
+</body>
+</html>
+
+

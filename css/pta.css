@@ -1,0 +1,283 @@
+.pta-section {
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+.pta-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pta-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pta-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #333;
+}
+
+.pta-executives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.executive-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.executive-card:hover {
+    transform: translateY(-5px);
+}
+
+.executive-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.executive-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.executive-info {
+    padding: 1.5rem;
+}
+
+.executive-info h3 {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+}
+
+.executive-info .position {
+    color: #2a5298;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.executive-info .description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.executive-contact {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.executive-contact p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.executive-contact i {
+    color: #1e3c72;
+    margin-right: 0.5rem;
+}
+
+.pta-committees {
+    margin-bottom: 4rem;
+}
+
+.pta-committees h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.committees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.committee-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.committee-item:hover {
+    transform: translateY(-5px);
+}
+
+.committee-item i {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.committee-item h3 {
+    color: #2a5298;
+    margin-bottom: 1rem;
+}
+
+.committee-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.pta-activities {
+    margin-bottom: 4rem;
+}
+
+.pta-activities h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.activities-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.activities-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #1e3c72;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-date {
+    width: 120px;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.timeline-date .month {
+    display: block;
+    font-size: 1.2rem;
+    color: #1e3c72;
+    font-weight: 600;
+}
+
+.timeline-date .year {
+    display: block;
+    color: #666;
+}
+
+.timeline-content {
+    width: calc(100% - 140px);
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #1e3c72;
+    border-radius: 50%;
+}
+
+.timeline-content h3 {
+    color: #2a5298;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+    .pta-executives {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pta-section {
+        padding: 1rem;
+    }
+
+    .pta-header h1 {
+        font-size: 2rem;
+    }
+
+    .pta-executives {
+        grid-template-columns: 1fr;
+    }
+
+    .committees-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .activities-timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-date {
+        width: 100%;
+        text-align: left;
+        padding-left: 60px;
+        margin-bottom: 1rem;
+    }
+
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+
+    .timeline-content::before {
+        left: -40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .committees-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pta-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .executive-image {
+        height: 200px;
+    }
+} 

@@ -1,0 +1,353 @@
+/* Tuition & Fees Page Styles */
+.tuition-section {
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.tuition-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tuition-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.tuition-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Fee Overview */
+.fee-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.overview-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.overview-card:hover {
+    transform: translateY(-5px);
+}
+
+.overview-card i {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.overview-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.overview-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Fee Sections */
+.fee-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.fee-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.fee-table {
+    overflow-x: auto;
+}
+
+.fee-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.fee-table th,
+.fee-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.fee-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.fee-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.fee-table .total {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.fee-table .total td {
+    color: #1e3c72;
+}
+
+/* Additional Fees */
+.additional-fees {
+    margin-bottom: 3rem;
+}
+
+.additional-fees h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.fees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.fee-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.fee-card:hover {
+    transform: translateY(-5px);
+}
+
+.fee-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.fee-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fee-card li {
+    color: #666;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.fee-card li::before {
+    content: "•";
+    color: #1e3c72;
+    position: absolute;
+    left: 0;
+}
+
+/* Scholarships */
+.scholarships {
+    margin-bottom: 3rem;
+}
+
+.scholarships h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.scholarship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.scholarship-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.scholarship-card:hover {
+    transform: translateY(-5px);
+}
+
+.scholarship-card i {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.scholarship-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.scholarship-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.scholarship-cta {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-cta p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #1e3c72;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2a5298;
+    transform: translateY(-3px);
+}
+
+/* Payment Instructions */
+.payment-instructions {
+    margin-bottom: 3rem;
+}
+
+.payment-instructions h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.instructions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.instruction-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.instruction-card:hover {
+    transform: translateY(-5px);
+}
+
+.instruction-card i {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.instruction-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.instruction-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .fee-overview,
+    .fees-grid,
+    .scholarship-grid,
+    .instructions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .tuition-header h1 {
+        font-size: 2rem;
+    }
+    
+    .fee-overview,
+    .fees-grid,
+    .scholarship-grid,
+    .instructions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .fee-table {
+        font-size: 0.9rem;
+    }
+    
+    .fee-table th,
+    .fee-table td {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tuition-section {
+        padding: 1rem;
+    }
+    
+    .tuition-header {
+        padding: 2rem 1rem;
+    }
+    
+    .tuition-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .fee-section {
+        padding: 1.5rem;
+    }
+    
+    .overview-card,
+    .fee-card,
+    .scholarship-card,
+    .instruction-card {
+        padding: 1.5rem;
+    }
+} 

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Institution</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../images/cropped-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Slideshow Styles */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .slide-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            width: 80%;
+            z-index: 1;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            margin-top: -30px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 50%;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.3);
+            background-size: cover;
+            background-position: center;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Main Content Styles */
+        .features {
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Staff Section Styles */
+        .staff-slider {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .staff-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .staff-card {
+            min-width: 300px;
+            margin: 0 15px;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .staff-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .staff-card h3 {
+            color: #003366;
+            margin-bottom: 5px;
+        }
+
+        .staff-card p {
+            color: #666;
+        }
+
+        .staff-prev, .staff-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(0, 51, 102, 0.8);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: all 0.3s;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .staff-prev:hover, .staff-next:hover {
+            background-color: rgba(0, 51, 102, 0.9);
+        }
+
+        .staff-prev {
+            left: 10px;
+        }
+
+        .staff-next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="location">
+            <div>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Maganjo B Cell, Nabweru Division, Nansana Municipality
+                    </p>
+            </div>
+                    <p style="margin-right: 0px;">
+                        <i class="fas fa-phone-alt"></i>  +256 772 820 615    <i class="fas fa-envelope"></i>  info@simc.com
+                    </p>
+        </div>
+    </header>        
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../images/cropped-logo.png" alt="Sam Iga Memorial College">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Admission</a></li>
+                    <li><a href="#">Learning</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="../images/simc.jpg" alt="simc">
+                <div class="slide-content">
+                    <h2>Welcome to Our Institution</h2>
+                    <p>Empowering minds, Shaping futures</p>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('https://via.placeholder.com/1920x1080/004d99/ffffff');">
+                <img src="../images/mdd2.jpeg" alt="">
+                <div class="slide-content">
+                    <h2>State-of-the-art Facilities</h2>
+                    <p>Modern classrooms and laboratories</p>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('https://via.placeholder.com/1920x1080/006666/ffffff');">
+                <img src="../images/reward1.jpeg" alt="">
+                <div class="slide-content">
+                    <h2>Expert Faculty</h2>
+                    <p>Learn from the best in their fields</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Quality Education</h3>
+                <p>Our institution provides world-class education with experienced faculty members.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Modern Facilities</h3>
+                <p>State-of-the-art infrastructure and learning resources for students.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Career Support</h3>
+                <p>Dedicated career guidance and placement assistance for all students.</p>
+            </div>
+        </section>
+
+        <section id="programs" style="padding: 4rem 2rem;">
+            <h2>Our Programs</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div class="feature-card">
+                    <h3>Undergraduate Programs</h3>
+                    <ul>
+                        <li>Bachelor of Science in Computer Science</li>
+                        <li>Bachelor of Business Administration</li>
+                        <li>Bachelor of Arts in Psychology</li>
+                        <li>Bachelor of Engineering</li>
+                        <li>Bachelor of Education</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Graduate Programs</h3>
+                    <p>Master's and doctoral programs</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Certificate Courses</h3>
+                    <p>Short-term specialized courses</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="staff" style="padding: 4rem 2rem; background-color: #f5f5f5;">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Our Staff Members</h2>
+            <div class="staff-slider">
+                <div class="staff-container">
+                    <div class="staff-card">
+                        <img src="https://via.placeholder.com/200x200/003366/ffffff" alt="Staff Member 1">
+                        <h3>Dr. John Smith</h3>
+                        <p>Principal</p>
+                    </div>
+                    <div class="staff-card">
+                        <img src="https://via.placeholder.com/200x200/004d99/ffffff" alt="Staff Member 2">
+                        <h3>Prof. Sarah Johnson</h3>
+                        <p>Head of Science</p>
+                    </div>
+                    <div class="staff-card">
+                        <img src="https://via.placeholder.com/200x200/006666/ffffff" alt="Staff Member 3">
+                        <h3>Dr. Michael Brown</h3>
+                        <p>Head of Arts</p>
+                    </div>
+                    <div class="staff-card">
+                        <img src="https://via.placeholder.com/200x200/008080/ffffff" alt="Staff Member 4">
+                        <h3>Ms. Emily Davis</h3>
+                        <p>Head of Business</p>
+                    </div>
+                </div>
+                <button class="staff-prev" onclick="moveStaff(-1)">&#10094;</button>
+                <button class="staff-next" onclick="moveStaff(1)">&#10095;</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Education Institution. All rights reserved.</p>
+        <div style="margin-top: 1rem;">
+            <p>Contact us: info@education.com</p>
+            <p>Address: 123 Education Street, City, Country</p>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex].style.display = "block";
+
+            // Update navigation buttons with preview images
+            const prevIndex = (slideIndex - 1 + slides.length) % slides.length;
+            const nextIndex = (slideIndex + 1) % slides.length;
+
+            // Get images from img tags
+            const prevImage = slides[prevIndex].querySelector('img').src;
+            const nextImage = slides[nextIndex].querySelector('img').src;
+
+            // Set preview images to navigation buttons
+            document.querySelector('.prev').style.backgroundImage = `url('${prevImage}')`;
+            document.querySelector('.next').style.backgroundImage = `url('${nextImage}')`;
+        }
+
+        // Auto advance slides
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Staff Slider Functionality
+        let staffPosition = 0;
+        const staffContainer = document.querySelector('.staff-container');
+        const staffCards = document.querySelectorAll('.staff-card');
+        const cardWidth = 330; // 300px card + 30px margin
+
+        function updateStaffPreviews() {
+            const staffPrev = document.querySelector('.staff-prev');
+            const staffNext = document.querySelector('.staff-next');
+            
+            // Calculate indices for preview
+            const currentIndex = Math.abs(staffPosition / cardWidth);
+            const prevIndex = (currentIndex - 1 + staffCards.length) % staffCards.length;
+            const nextIndex = (currentIndex + 3) % staffCards.length;
+
+            // Get preview images
+            const prevImage = staffCards[prevIndex].querySelector('img').src;
+            const nextImage = staffCards[nextIndex].querySelector('img').src;
+
+            // Update navigation buttons
+            staffPrev.style.backgroundImage = `url('${prevImage}')`;
+            staffNext.style.backgroundImage = `url('${nextImage}')`;
+        }
+
+        function moveStaff(direction) {
+            const maxPosition = -(staffCards.length - 3) * cardWidth;
+            
+            staffPosition += direction * cardWidth;
+            
+            if (staffPosition > 0) {
+                staffPosition = maxPosition;
+            } else if (staffPosition < maxPosition) {
+                staffPosition = 0;
+            }
+            
+            staffContainer.style.transform = `translateX(${staffPosition}px)`;
+            updateStaffPreviews();
+        }
+
+        // Initialize staff previews
+        updateStaffPreviews();
+
+        // Auto slide staff members
+        setInterval(() => {
+            moveStaff(1);
+        }, 5000);
+    </script>
+</body>
+</html>
+<script>
+    // Function to create typewriter effect for text in slides
+    function typeWriter(element, text, speed = 50) {
+        let i = 0;
+        element.innerHTML = '';
+        
+        function type() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
+        
+        type();
+    }
+
+    // Modify showSlides function to include typewriter effect
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("slide");
+        
+        if (n >= slides.length) {
+            slideIndex = 0;
+        }
+        if (n < 0) {
+            slideIndex = slides.length - 1;
+        }
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex].style.display = "block";
+        
+        // Get all text elements in the current slide
+        const textElements = slides[slideIndex].querySelectorAll('h2, p');
+        
+        // Apply typewriter effect to each text element with slight delay between them
+        textElements.forEach((element, index) => {
+            const originalText = element.textContent;
+            setTimeout(() => {
+                typeWriter(element, originalText);
+            }, index * 1000); // 1 second delay between each text element
+        });
+    }
+</script>
+
+
+
+

@@ -1,0 +1,374 @@
+/* A-Level Page Styles */
+.alevel-section {
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.alevel-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alevel-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.alevel-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Program Overview Section */
+.program-overview {
+    margin-bottom: 4rem;
+}
+
+.program-overview h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.overview-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.overview-card:hover {
+    transform: translateY(-5px);
+}
+
+.overview-icon {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.overview-card h3 {
+    color: #2a5298;
+    margin-bottom: 0.5rem;
+}
+
+/* Subject Combinations Section */
+.combinations-section {
+    margin-bottom: 4rem;
+}
+
+.combinations-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.combinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.combination-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.combination-card h3 {
+    color: #2a5298;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.combination-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.combination-card li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.combination-card li:last-child {
+    border-bottom: none;
+}
+
+/* Features Section */
+.features-section {
+    margin-bottom: 4rem;
+}
+
+.features-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #2a5298;
+    margin-bottom: 1rem;
+}
+
+/* Assessment Section */
+.assessment-section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.assessment-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.assessment-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.assessment-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.assessment-content li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.assessment-content li:last-child {
+    border-bottom: none;
+}
+
+/* University Section */
+.university-section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.university-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.university-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.university-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.university-content li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.university-content li:last-child {
+    border-bottom: none;
+}
+
+/* Extracurricular Section */
+.extracurricular-section {
+    margin-bottom: 4rem;
+}
+
+.extracurricular-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.activity-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-icon {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.activity-card h3 {
+    color: #2a5298;
+    margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.cta-section h2 {
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+}
+
+.cta-btn.primary {
+    background: white;
+    color: #1e3c72;
+}
+
+.cta-btn.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .overview-grid,
+    .combinations-grid,
+    .features-grid,
+    .activities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .alevel-header h1 {
+        font-size: 2rem;
+    }
+
+    .overview-grid,
+    .combinations-grid,
+    .features-grid,
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .alevel-section {
+        padding: 1rem;
+    }
+
+    .alevel-header {
+        padding: 2rem 1rem;
+    }
+
+    .alevel-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .overview-card,
+    .combination-card,
+    .feature-card,
+    .activity-card {
+        padding: 1.5rem;
+    }
+} 

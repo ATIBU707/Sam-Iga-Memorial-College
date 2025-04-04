@@ -1,0 +1,651 @@
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.mySlides {
+    display: none;
+    position: relative;
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
+
+.mySlides img {
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+}
+
+/*working on words in slideshow*/
+.text {
+    color: #fff;
+    font-size: 18px;
+    padding: 20px;
+    position: absolute;
+    bottom: 35%;
+    width: 35%;
+    text-align: left;
+    margin-left: 60px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.text h2{
+    font-size: 50px;
+    text-align: center;
+    animation: typing 1s steps(40, end), blink 0.75s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 26ch;
+    }
+}
+
+.text .button{
+    background-color: #1a75ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+.next {
+    right: 20px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*content of headteacher*/
+.content {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-img{
+    width: 70%;
+}
+
+.content-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.content-text{
+    width: 100%;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.content-text h2{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #1a75ff;
+}
+
+.content-text p{
+    margin-bottom: 20px;
+}
+
+.content-text b{
+    color: red;
+}
+
+.headteacher-info{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    align-items: center;
+}
+
+.headteacher-text>p{
+    line-height: 1.8; 
+    font-size: 1.1rem; 
+    color: #444; 
+    margin-bottom: 1.5rem;
+}
+
+.headteacher-quote{
+    background: #f8f9fa; 
+    padding: 1.5rem; 
+    border-radius: 8px; 
+    border-left: 4px solid #1a75ff; 
+    margin: 1.5rem 0;
+}
+
+.headteacher-quote>p{
+    font-style: italic; 
+    color: #666; 
+    margin: 0;
+}
+
+.headteacher-achievements{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.achievement-item {
+    transition: transform 0.3s ease;
+    background: white; 
+    padding: 1rem; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.achievement-item>h4{
+    color: #003366; 
+    margin-bottom: 0.5rem;
+}
+
+.achievement-item>p{
+    color: #666; 
+    font-size: 0.9rem;
+}
+.achievement-item:hover {
+    transform: translateY(-5px);
+}
+.headteacher-image img {
+    transition: transform 0.3s ease;
+}
+.headteacher-image img:hover {
+    transform: scale(1.02);
+}
+@media (max-width: 768px) {
+    .headteacher-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .headteacher-image {
+        order: -1;
+        text-align: center;
+    }
+
+    .headteacher-image img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .headteacher-text {
+        text-align: center;
+    }
+
+    .headteacher-quote {
+        margin: 1.5rem auto;
+        max-width: 90%;
+    }
+
+    .headteacher-achievements {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 90%;
+        margin: 1.5rem auto;
+    }
+
+    .achievement-item {
+        text-align: center;
+    }
+}
+
+
+/*Subject Offered*/
+.Subject{
+    text-align:center; 
+    color:#1a75ff;
+    margin: 2rem auto;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.level-section{
+    background: #f8f9fa; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.level-section h2{
+    color: #003366; 
+    text-align: center; 
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.level-section h2 i {
+    color: #1a75ff;
+}
+
+.col{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    padding: 2rem; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.icons{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 1rem;
+    width: 100%;
+}
+
+.subject-item {
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.subject-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.subject-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.subject-item i {
+    color: #1a75ff;
+    font-size: 1.2rem;
+    min-width: 1.5rem;
+    text-align: center;
+}
+
+/* Church section*/
+.church-section {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.church-section>h2{
+    color: #003366; 
+    margin-bottom: 1.5rem;
+}
+
+.church-section>p{
+    line-height: 1.8; 
+    font-size: 1.1rem; 
+    color: #444;
+}
+
+.values-grid{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.value-item {
+    transition: transform 0.3s ease;
+    background: #f8f9fa; 
+    padding: 1rem;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.value-item h3{
+    color: #003366;
+    margin-bottom: 0.5rem;
+}
+.value-item p{
+    color: #666; 
+    font-size: 0.9rem;
+}
+.value-item:hover {
+    transform: translateY(-5px);
+}
+.church-image img {
+    transition: transform 0.3s ease;
+}
+.church-image img:hover {
+    transform: scale(1.02);
+}
+
+
+/* Additional Church Section Styles */
+.value-item i.fa-star {
+    color: #ffd700;
+}
+
+.value-item i.fa-graduation-cap {
+    color: #1a75ff;
+}
+
+.value-item i.fa-heart {
+    color: #ff4d4d;
+}
+
+.value-item i.fa-users {
+    color: #4CAF50;
+}
+
+.motto {
+    color: #003366;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    
+    .content-img.church-image {
+        order: -1;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .content-img.church-image img {
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .content-text.church-section {
+        width: 100%;
+    }
+}
+
+/* Responsive styles for subject section */
+@media (max-width: 1024px) {
+    .col {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .level-section {
+        padding: 1.5rem;
+    }
+
+    .Subject {
+        font-size: 2rem;
+    }
+
+    .icons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .col {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .level-section {
+        padding: 1rem;
+    }
+
+    .icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Subject {
+        font-size: 1.8rem;
+    }
+
+    .subject-item {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .col {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .level-section {
+        padding: 0.8rem;
+    }
+
+    .icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Subject {
+        font-size: 1.5rem;
+    }
+
+    .subject-item {
+        padding: 0.8rem;
+    }
+
+    .subject-item i {
+        font-size: 1.2rem;
+    }
+
+    .level-section h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsive styles for slideshow text */
+@media (max-width: 1200px) {
+    .text {
+        width: 45%;
+        bottom: 30%;
+        margin-left: 40px;
+    }
+
+    .text h2 {
+        font-size: 40px;
+    }
+
+    .text p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text {
+        width: 50%;
+        bottom: 25%;
+        margin-left: 30px;
+    }
+
+    .text h2 {
+        font-size: 35px;
+    }
+
+    .text p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mySlides img {
+        height: 500px;
+    }
+
+    .text {
+        width: 70%;
+        bottom: 20%;
+        margin-left: 20px;
+        padding: 15px;
+    }
+
+    .text h2 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 20px;
+    }
+
+    .text .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mySlides img {
+        height: 400px;
+    }
+
+    .text {
+        width: 80%;
+        bottom: 15%;
+        margin-left: 15px;
+        padding: 12px;
+    }
+
+    .text h2 {
+        font-size: 25px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .text .button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mySlides img {
+        height: 350px;
+    }
+
+    .text {
+        width: 90%;
+        bottom: 10%;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .text h2 {
+        font-size: 22px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .text .button {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+}
+
